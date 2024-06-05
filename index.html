@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poetsen+One&display=swap" rel="stylesheet">
+    <style>
+        /* Add your custom CSS here */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer .social-icons {
+            margin: 20px 0;
+        }
+
+        footer .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        footer .social-icons a:hover {
+            color: #007bff;
+        }
+
+        footer .footer-links {
+            margin: 20px 0;
+        }
+
+        footer .footer-links a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer .footer-links a:hover {
+            color: #007bff;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-container {
+                flex-direction: column;
+            }
+
+            .nav-links {
+                flex-direction: column;
+            }
+
+            .intro-text {
+                text-align: center;
+            }
+
+            .skill-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo">PortFolio</a>
+            <ul class="nav-links">
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="intro" class="intro fade-in-up">
+        <img src="MN.jpg" alt="Your Photo" class="profile-photo">
+        <div class="intro-text">
+            <h1>Hello, I'm AadityaMohit</h1>
+            <p style="font-size: 60px;">I'm a <span id="developer-type" style="font-family: 'Honk', system-ui;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-size: 60px;
+                font-style: normal;
+                font-variation-settings:
+                  'MORF' 15,
+                  'SHLN' 50;">Web Developer</span>.</p>
+            <p>I specialize in building interactive and responsive web applications using modern technologies like Django and MERN stack.</p>
+            <p>With a strong foundation in both front-end and back-end development, I strive to create user-friendly experiences and robust solutions for my clients.</p>
+        </div>
+    </div>
+    
+    <div id="about" class="about fade-in-up">
+        <h2>About Me</h2>
+        <p>I am passionate about creating innovative solutions and solving complex problems through technology. With a keen interest in web development, I continuously strive to enhance my skills and stay updated with the latest industry trends.</p>
+        <p>My journey in the field of web development started with a curiosity to explore the digital world and has evolved into a fulfilling career where I can contribute meaningfully to projects and make a positive impact.</p>
+        <button id="download-cv-button" class="cv-button">Download CV</button>
+    </div>
+    
+    <div id="experience" class="experience fade-in-up">
+        <h2>Experience</h2>
+        <p>I have 2 years of experience in web development. During this time, I have had the opportunity to work with organizations like Muskurat Jhat Foundation.</p>
+        <p>My work involved creating engaging user interfaces and designs, ensuring a seamless user experience across various platforms.</p>
+        <p>I have expertise in:</p>
+        <ul>
+            <li>Front-end development (HTML, CSS, JavaScript)</li>
+            <li>Back-end development (Django, Express.js)</li>
+            <li>Database management (SQL, MongoDB)</li>
+            <li>UI/UX design principles</li>
+        </ul>
+        <button class="hire-button">Hire Me</button>
+    </div>
+    <div id="projects" class="projects fade-in-up">
+        <h2>Projects</h2>
+        <div class="project">
+            <a href="https://aadityamohittextutil.netlify.app/">
+                <img src="t.png" alt="Project 1">
+            </a>
+            <p>Notes Taking Web App</p>
+        </div>
+        <div class="project">
+            <a href="https://aadityamohithub.netlify.app/">
+                <img src="p.png" alt="Project 2">
+            </a>
+            <p>Text-Utils</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </div>
+    <div id="skills" class="skills fade-in-up">
+        <h2>Skills</h2>
+        <div class="skill-row">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%; background-color: #007bff;"></div>
+            </div>
+        </div>
+        <div class="skill-row">
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%; background-color: #28a745;"></div>
+            </div>
+        </div>
+        <div class="skill-row">
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%; background-color: #ffc107;"></div>
+            </div>
+        </div>
+        <div class="skill-row">
+            <div class="skill-name">Python</div>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%; background-color: #dc3545;"></div>
+            </div>
+        </div>
+        <div class="skill-row">
+            <div class="skill-name">DJANGO</div>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%; background-color: #00fff7;"></div>
+            </div>
+        </div>
+        <div class="skill-row">
+            <div class="skill-name">MERN</div>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 65%; background-color: #ad04fc;"></div>
+            </div>
+        </div>
+        <!-- Add more skills as needed -->
+    </div>
+    
+    <div id="education" class="education fade-in-up">
+        <h2>Education</h2>
+        <div class="education-info">
+            <h3>BCA (Bachelor of Computer Applications)</h3>
+            <p>BCA is a three-year undergraduate degree program that focuses on developing computer application skills. It covers various topics such as programming languages, database management, software engineering, and web development.</p>
+            <p>Benefits of BCA:</p>
+            <ul>
+                <li>Provides a strong foundation in computer science concepts</li>
+                <li>Offers practical exposure to various programming languages and technologies</li>
+                <li>Prepares students for entry-level positions in the IT industry</li>
+                <li>Opens up opportunities for further studies or specialization in fields like software engineering, data science, or cybersecurity</li>
+            </ul>
+        </div>
+        <div class="comparison">
+            <h3>Comparison with High-Skilled Courses</h3>
+            <p>While BCA provides a comprehensive understanding of computer applications, high-skilled courses with a focus on UI/UX design offer specialized knowledge in creating visually appealing and user-friendly interfaces.</p>
+            <p>High-skilled courses emphasize:</p>
+            <ul>
+                <li>Advanced UI/UX design principles</li>
+                <li>Hands-on experience with industry-standard tools and software</li>
+                <li>Specialization in creating engaging and intuitive user interfaces</li>
+                <li>Preparation for roles such as UI/UX designer, front-end developer, or product designer</li>
+            </ul>
+            <p>Ultimately, the choice between BCA and high-skilled courses depends on your career goals and interests. BCA offers a broader foundation in computer applications, while high-skilled courses provide specialized expertise in UI/UX design, which is in high demand in today's digital landscape.</p>
+        </div>
+    </div>
+    
+    <div id="contact" class="contact fade-in-up">
+        <h2>Contact</h2>
+        <p>If you have any questions or inquiries, feel free to reach out to me!</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/aadityamohit/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/aadityamohit" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/aadityamohit" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="footer-links">
+            <a href="#intro">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <p>&copy; 2024 Aaditya_Mohit. All rights reserved.</p>
+    </footer>
+    
+    <div class="back-to-top" id="back-to-top">↑</div>
+
+    <script>
+        const developerTypes = ["Web Developer", "Web Designer", "DJANGO", "MERN"];
+        let index = 0;
+        
+        function changeDeveloperType() {
+            document.getElementById("developer-type").textContent = developerTypes[index];
+            index = (index + 1) % developerTypes.length;
+        }
+
+        // Initial call
+        changeDeveloperType();
+        
+        // Animation interval
+        setInterval(changeDeveloperType, 1000);
+        
+        // Smooth scrolling for navbar links
+        document.querySelectorAll('.nav-links a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Download CV functionality
+        document.getElementById('download-cv-button').addEventListener('click', function () {
+            const link = document.createElement('a');
+            link.href = '/AadityaMohit_Resume.pdf';  
+            link.download = 'AadityaMohit_Resume.pdf'; 
+            link.click();
+        });
+
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
